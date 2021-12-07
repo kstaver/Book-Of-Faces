@@ -3,7 +3,7 @@ const { Thought, User } = require('../models');
 const thoughtController = {
 
     // Get all thoughts or posts
-    getAllThoughts: (req, res) =>{
+    getAllThoughts(req, res){
         Thought.find({})
         .populate({ path: 'user', select: '-__v'})
         .then(dbThoughtData => res.json(dbThoughtData))
@@ -14,7 +14,7 @@ const thoughtController = {
     },
 
     // Get a thought or post by id
-    getThoughtByID:({ params }, res) => {
+    getThoughtByID({ params }, res) {
         Thought.findOne({ _id: params.id })
         .populate({ path: 'reactions', select: '-__v' })
         .select('-__v')
@@ -26,13 +26,25 @@ const thoughtController = {
         })
     },
     // Create a thought or post
-    createThought: (req, res) => {
+    createThought({ params, body }, res) {
 
-    }
+    },
     // Add a reaction
+    addReaction({ params, body }, res){
+
+    },
     // Remove a reaction
+    removeReaction({ params }, res){
+
+    },
     // Update thoughts or posts
+    updateThought({ params, body }, res){
+
+    },
     // Delete a thought or post
+    deleteThought({ params, body }, res){
+        
+    }
 };
 
 module.exports = thoughtController;
