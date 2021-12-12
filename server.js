@@ -1,3 +1,4 @@
+import mongoose from 'mongoose';
 const express = require('express');
 const mongoose = require('mongoose');
 
@@ -10,11 +11,16 @@ app.use(express.static('public'));
 
 app.use(require('./routes'));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/book-of-faces',{
-    useFindAndModify: false,
+const db = process.env.MONGODB_URI;
+
+mongoose.connect(db || 'mongodb://localhost/book-of-faces',{
     useNewUrlParser: true,
     useUnifiedTopology: true
-});
+    }, err =>{
+        if(err) throw err;
+        console.log('Connected to MongoDB.');
+    }
+);
 
 mongoose.set('debug', true);
 
