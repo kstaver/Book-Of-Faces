@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kstaver/Book-Of-Faces/issues"
   },
-  "homepage": "https://github.com/kstaver/Book-Of-Faces#readme"
+  "homepage": "https://github.com/kstaver/Book-Of-Faces#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
 }
