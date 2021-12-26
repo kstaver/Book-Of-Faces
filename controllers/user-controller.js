@@ -28,7 +28,8 @@ const userController = {
         .populate({
             path: 'thoughts',
             select: '-__v'
-        })        .sort({ _id: -1 })
+        })       
+        .sort({ _id: -1 })
         .populate({
             path: 'friends',
             select: '-__v'
