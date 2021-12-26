@@ -15,9 +15,9 @@ const thoughtController = {
     // Get a thought or post by id
     getThoughtById({ params }, res) {
         Thought.findOne({ _id: params.id })
-        //.populate({ path: 'reactions', select: '-__v' })
-        //.select('-__v')
-        //.sort({ id: -1 })
+        .populate({ path: 'reactions', select: '-__v' })
+        .select('-__v')
+        .sort({ id: -1 })
         .then(dbThoughtData => {
             if (!dbThoughtData){
                 res.status(404).json({message: 'This thought does not exist.'});
