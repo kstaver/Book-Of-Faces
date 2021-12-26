@@ -13,12 +13,15 @@ const {
 router
     .route('/')
     .get(getAllThoughts)
-    .post(createThought)
 
 router
     .route('/:id')
     .get(getThoughtById)
     .put(updateThought)
+
+router
+    .route('/:userId')
+    .post(createThought)
 
 router
     .route('/:userId/:thoughtId')
