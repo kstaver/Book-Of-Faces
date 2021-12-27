@@ -18,6 +18,10 @@ const ReactionSchema = new Schema(
             type: String,
             required: true,
         },
+        userId: {
+            type: String,
+            required: true
+        },
         createdAt: {
             type: Date,
             default: Date.now,
@@ -44,11 +48,16 @@ const ThoughtSchema = new Schema(
             default: Date.now,
             get: createdAtVal => moment(createdAtVal).format('MMMM DD, YYYY [a] hh:mm a')
         },
+        reactions: [ReactionSchema],
         username: {
             type: String,
             required: true,
+            userId: {
+                type: String,
+                required: true
+            }
         },
-        reactions: [ReactionSchema],
+
     },
     {
         toJSON:{
