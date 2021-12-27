@@ -1,5 +1,6 @@
 const { Schema, model } = require('mongoose');
 const moment = require('moment');
+const Thought = require('.Thought.js');
 
 const UserSchema = new Schema(
     {
@@ -42,6 +43,12 @@ const User = model('User', UserSchema);
 
 UserSchema.virtual('friendCount').get(function(){
     return this.friends.length;
+});
+
+UserSchema.virtuial('thoughtCount').get(function () {
+    console.log(this.thoughts);
+    console.log(this.thoughts.length);
+    return this.thoughts.length;
 });
 
 module.exports = User;
