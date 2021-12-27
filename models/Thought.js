@@ -12,7 +12,7 @@ const ReactionSchema = new Schema(
             required: true,
             trim: true,
             minlength: 1,
-            maxlength: 200
+            maxlength: 280
         },
         username: {
             type: String,
@@ -64,7 +64,8 @@ const ThoughtSchema = new Schema(
             virtuals: true,
             getters: true
         },
-    }
+        id: false
+    },
 );
 
 ThoughtSchema.virtual('reactionCount').get(function(){
