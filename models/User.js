@@ -45,7 +45,7 @@ UserSchema.virtual('friendCount').get(function(){
     return this.friends.length;
 });
 
-UserSchema.virtuial('thoughtCount').get(function () {
+UserSchema.virtual('thoughtCount').get(function () {
     console.log(this.thoughts);
     console.log(this.thoughts.length);
     return this.thoughts.length;
