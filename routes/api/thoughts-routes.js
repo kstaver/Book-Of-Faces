@@ -6,8 +6,9 @@ const {
     createThought,
     updateThought,
     deleteThought,
-    removeReaction,
-    addReaction
+    addReaction,
+    removeReaction
+
 } = require('../../controllers/thought-controller');
 
 router
