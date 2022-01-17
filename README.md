@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
-  This application is a social network API.
+  This application is an example of the backend for a social network API.
 
   ## Table of Contents
   - [Description](#description)
@@ -16,10 +16,10 @@
   - [Contact Info](#contact-info)
 
   ## Installation
-
+  None involved! This application can be found on [Heroku]().
 
   ## Usage
-
+  Check out my tutorial on how to use this application: (video of using the app).
 
   ## License
   This project is covered under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
