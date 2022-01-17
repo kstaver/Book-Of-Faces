@@ -10,7 +10,7 @@ app.use(express.static('public'));
 
 app.use(require('./routes'));
 
-const db = process.env.MONGODB_URI;
+const db = process.env.MONGODB_URL;
 
 mongoose.connect(db || 'mongodb://localhost/book-of-faces',{
     useNewUrlParser: true,
