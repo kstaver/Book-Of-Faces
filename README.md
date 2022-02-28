@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
-  This application is an example of the backend for a social network API.
+  This project is an example of a backend for any social media application. You can create and manage your own social media backend on by following the instructions mentioned below.
 
   ## Table of Contents
   - [Description](#description)
