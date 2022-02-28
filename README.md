@@ -18,7 +18,8 @@
   ## Installation
   1. Clone this repository. Please do not make any changes to original repository without my permission.
   2. Install necessary packages.
-  3. Run ```npm start``.
+  3. Run ```npm start``` in your Command Line or VS Code terminal.
+  4. See video in Usage on how to use the backend in Insomnia or similar program.
 
   ## Usage
   Check out my tutorial on how to use this application: [Book Of Faces](https://youtu.be/N2pCil_Sdf4).
