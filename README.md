@@ -31,7 +31,7 @@
   Please pay me. 😊 Just kidding (or am I!?)! You can contribute to this project by sending me an email about what you would like to contribute.
 
   ## Questions
-  You can find the link to my application [here](https://github.com/kstaver/Book-Of-Faces). If you have any questions pertaining to this project, please feel free to contact me.
+  The link to this project is [here](https://github.com/kstaver/Book-Of-Faces). If you have any questions pertaining to this project, please feel free to contact me.
 
   ## Contact Info
   - Github: [kstaver](https://github.com/kstaver)
